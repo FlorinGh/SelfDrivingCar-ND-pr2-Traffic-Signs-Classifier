@@ -1,0 +1,17 @@
+Ideas to improve the traffic sign classifier:
+
+Accuracy:
+
+
+- ensure the distribution of samples across different classes is well balanced
+- augment the training data with image processing techniques (shifts, brightness adjustments, etc.)
+to create more diverse examples for the model to learn from
+- increase the number of convolution or fully connected layers in your network 
+- use batch normalization
+
+
+Visualization
+- To further explore the data, you can also display a few images for each of a few traffic sign classes
+to get a sense of how they vary within the class.
+
+
