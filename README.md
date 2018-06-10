@@ -54,7 +54,7 @@ A bin chart was created to visualise the train, validation and test sets:
 * this chart works a frequency plot: it shows how many example we have for each of the classes
 * for any given set, the distribution is not uniform between classes; but this distribution is kept for all sets; this will ensure that the train will not bias the model toward a specific class
 
-![Train, validation and test sets show in a bins chart](.output/dataset_visual.jpg)
+![Train, validation and test sets show in a bins chart](https://github.com/FlorinGh/SelfDrivingCar-ND-pr2-Traffic-Signs-Classifier/blob/master/output/dataset_visual.jpg)
 
 ### Design and Test a Model Architecture
 
@@ -73,7 +73,7 @@ for i in range(len(X_train)):
     X_trainG[i]= cv2.cvtColor(X_train[i].squeeze(), cv2.COLOR_RGB2GRAY)
 ```
 
-![Example of a traffic sign before and after grayscale](.output/grayscale.jpg)
+![Example of a traffic sign before and after grayscale](https://github.com/FlorinGh/SelfDrivingCar-ND-pr2-Traffic-Signs-Classifier/blob/master/output/grayscale.jpg)
 
 * normalisation: we have to make sure the data has mean zero and equal variance; given the images are now grayscale, each pixel has a value between 0 and 255; applying `(pixel - 128)/128` is a quick way to approximately normalise the data; normalising images increased accuracy with about 3.5% and improved learning speed
 
@@ -206,7 +206,7 @@ My final model results were:
 
 To test my model I used 12 traffic signs that were not in the original data set:
 
-![12 new images to test the trained model](.output/new_images.jpg)
+![12 new images to test the trained model](https://github.com/FlorinGh/SelfDrivingCar-ND-pr2-Traffic-Signs-Classifier/blob/master/output/new_images.jpg)
 
 Image no.4 might be difficult to classify because half of the sign is covered in snow. In the table below are listed the predictions using the trained network:
 
@@ -229,7 +229,7 @@ The model was able to correctly guess 11 out of 12 traffic signs, which gives an
 
 In the following we can see the top 5 softmax probabilities for each of the 12 new traffic signs:
 
-![Top 5 softmax probabilities for each of the 12 new traffic signs](.output/new_images_softmax.jpg)
+![Top 5 softmax probabilities for each of the 12 new traffic signs](https://github.com/FlorinGh/SelfDrivingCar-ND-pr2-Traffic-Signs-Classifier/blob/master/output/new_images_softmax.jpg)
 
 ### Visualising the Neural Network
 
@@ -237,7 +237,7 @@ While neural networks can be a great learning device they are often referred to 
 
 For instance, layer two focuses on the complete image taking into account a lot of details; as we go deeper in the network, the amount of data is smaller for each image and fewer and fewer details are considered.
 
-![Visualising the Neural Network](.output/visualize_cnn.png)
+![Visualising the Neural Network](https://github.com/FlorinGh/SelfDrivingCar-ND-pr2-Traffic-Signs-Classifier/blob/master/output/visualize_cnn.png)
 
 ## Results
 
